@@ -1,0 +1,10 @@
+/* 푸터 */
+.main-footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #343a40; /* 어두운 푸터 배경 */
+    color: #f8f9fa;
+    margin-top: 50px;
+    font-size: 0.9em;
+    border-top: 1px solid #495057;
+}

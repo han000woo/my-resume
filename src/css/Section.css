@@ -1,0 +1,268 @@
+/* 메인 콘텐츠 */
+.main-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 40px; /* 좌우 여백 증가 */
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 */
+    border-radius: 12px; /* 둥근 모서리 */
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    border-bottom: 3px solid #6c757d; /* 중간 회색 밑줄 */
+    padding-bottom: 12px;
+    color: #495057; /* 어두운 회색 제목 */
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 25px;
+    letter-spacing: 0.8px;
+}
+
+/* 일반 텍스트 */
+.summary p, .project-description, .experience-description {
+    font-size: 1.05em;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #495057;
+}
+
+/* 카드 스타일 */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+} */
+
+/* 육각형 컨테이너 설정 */
+.core-skills-hexagon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* 항목 간 간격 */
+    margin: 50px 0;
+}
+
+/* 줄바꿈을 위한 보이지 않는 요소 */
+.core-skills-hexagon-container .break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+/* 육각형의 기본 모양과 내용 */
+.core-skill-hexagon {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    margin: 20.74px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 그림자를 더 연하게 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+    /* 보더 기본 색상: 연한 회색 */
+    border: 2px solid #e9ecef;
+}
+
+/* 육각형 모양을 만들기 위한 가상 요소 */
+.core-skill-hexagon::before,
+.core-skill-hexagon::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 115.47px;
+    background-color: inherit;
+    box-shadow: inherit;
+    /* 가상 요소의 보더 색상: 연한 회색 */
+    border-left: 2px solid #e9ecef;
+    border-right: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.core-skill-hexagon:hover {
+    transform: scale(1.05);
+    /* 호버 시 그림자를 조금 더 진하게 */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); 
+    /* 호버 시 보더 색상 변경: 연한 강조색 */
+    border-color: #a5d6a7; 
+}
+
+.core-skill-hexagon:hover::before,
+.core-skill-hexagon:hover::after {
+    /* 호버 시 가상 요소의 보더 색상도 변경 */
+    border-color: #a5d6a7;
+}
+
+/* 내부 p 태그 스타일도 연한 톤으로 */
+.core-skill-hexagon p {
+    z-index: 1;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5;
+    word-break: keep-all;
+    text-align: center;
+    margin: 0;
+    
+    background-color: transparent; /* 배경색을 투명하게 */
+    color: #495057; /* 텍스트 색상은 그대로 */
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: none; /* 그림자 제거 */
+    transition: background-color 0.3s ease;
+}
+
+.core-skill-hexagon::before {
+    transform: rotate(60deg);
+}
+
+.core-skill-hexagon::after {
+    transform: rotate(-60deg);
+}
+
+/* 호버 효과 */
+.core-skill-hexagon:hover {
+    transform: scale(1.05);
+}
+
+/* 내부 콘텐츠 스타일 */
+.core-skill-hexagon i {
+    z-index: 1; /* 아이콘이 육각형 위에 보이도록 */
+    font-size: 3em;
+    color: #81c784;
+    margin-bottom: 15px;
+}
+
+.core-skill-hexagon p {
+    z-index: 1;
+    font-size: 1em;
+    font-weight: 500;
+    color: #495057;
+    line-height: 1.5;
+    word-break: keep-all;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* 핵심 역량 */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 반응형 그리드 */
+    gap: 20px;
+}
+
+.skill-item p {
+    margin: 0;
+    font-weight: 500;
+    color: #343a40;
+}
+
+/* 기술 스택 태그 */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    background-color: #e9ecef; /* 밝은 회색 태그 */
+    color: #495057;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/* 포트폴리오 그리드 */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+.project-item h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.5em;
+    color: #212529;
+    font-weight: 600;
+}
+
+.project-info {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-info .fas {
+    color: #81c784; /* 아이콘 강조색 */
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #4CAF50; /* 초록 계열 링크 버튼 */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* .project-link:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+} */
+
+/* 경력/교육/학력/자격증 공통 리스트 스타일 */
+.history-list {
+    display: grid;
+    grid-template-columns: 1fr; /* 기본 1열 */
+    gap: 20px;
+}
+
+@media (min-width: 768px) { /* 화면이 커지면 2열로 */
+    .history-list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+
+.experience-item h3, .education-item h3, .certificate-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+    color: #212529;
+    font-weight: 600;
+}
+
+.experience-date, .education-item p:nth-of-type(2), .certificate-item p {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
