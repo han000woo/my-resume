@@ -54,10 +54,19 @@
 }
 
 .tagline {
-    font-size: 1.3em;
+    font-size: 2.3em;
     font-weight: 400;
     margin-top: 10px;
     color: #ced4da; /* 밝은 회색 텍스트 */
+}
+.self-instroduction {
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #adb5bd; /* 중간 밝기의 회색 텍스트 */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-info {
