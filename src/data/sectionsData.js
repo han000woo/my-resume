@@ -1,4 +1,3 @@
-
 const sectionsData = [
   {
     title: "자기소개",
@@ -56,17 +55,34 @@ const sectionsData = [
         title: "서경대학교 졸업작품 - R언어 개발 웹사이트",
         date: "2024.03.01 ~ 2024.06.27",
         team: "1명",
-        description:
-          "R언어에 대해 공부하고 직접 코딩해 볼 수 있는 웹서비스를 클라우드 인프라에서 구현. R언어 프레임워크인 샤이니를 사용해 만든 서비스를 직접 서버에 올려 다른 사용자가 확인할 수 있게 함.",
+        description: [
+          "R언어에 대해 공부하고 직접 코딩할 수 있는 웹서비스 구현",
+          "클라우드 인프라 환경에서 배포",
+          "다른 사용자가 접속해 결과를 확인할 수 있도록 서버 운영",
+        ],
         link: "https://github.com/hamster0410/Graduation-Project-at-Seokyeong-University",
+      },
+      {
+        title: "KOSTA 국비지원 프로젝트 : 왓챠피디아",
+        date: "2024.10.01 ~ 2024.10.15",
+        team: "4명",
+        description: [
+          "왓챠피디아 클론코딩 프로젝트",
+          "Spring Boot + Thymeleaf 기반 웹 페이지 구현",
+          "세션 기반 로그인 기능 개발",
+        ],
+        link: "https://github.com/han000woo/kosta/tree/main/1%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/movie_pedia-main",
       },
       {
         title: "KOSTA 국비지원 프로젝트 : AnimalPing",
         date: "2024.11.01 ~ 2024.12.31",
         team: "4명",
-        description:
-          "반려동물을 키우는 사람들을 위한 커뮤니티와 쇼핑몰 등 개발. Spring Boot와 React를 주 언어로 jwt토큰 기반 로그인, 공공 API 활용, 메일 및 지도 서비스를 구현.",
-        link: "https://github.com/han000woo/kosta",
+        description: [
+          "반려동물을 위한 커뮤니티 + 쇼핑몰 서비스 개발",
+          "Spring Boot + React 기반",
+          "JWT 토큰 인증 기반 로그인",
+        ],
+        link: "https://github.com/han000woo/kosta/tree/main/3%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/animal_shop_back-main",
       },
     ],
   },
